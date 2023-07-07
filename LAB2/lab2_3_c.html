@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <button onclick="img_rand_gent()"> Generate </button>
+    <script>
+        function img_rand_gent(){
+        const imag = ["venom.jpeg","clg.jpeg","ghost.jpeg","figure.jfif"];
+        let v = Math.floor(Math.random()*3);
+        document.getElementById("demo").innerHTML =  ' <img src= "'+imag[v]+'">';
+    }
+
+    
+    </script>
+</body>
+</html>

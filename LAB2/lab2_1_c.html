@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+    let a = prompt(" enter  number 1  : ",0);
+    let b = prompt(" enter number 2 :  ",0);
+    a =parseInt(a);
+    b = parseInt(b);
+
+    const choice =["1 : add","2 : sub ", "3 : mul "," 4 : div"];
+    document.writeln(" choose  your choice :   <br>");
+    for (var i=0 ; i<choice.length ; i++){
+        document.writeln(choice[i]);
+    }
+    var ch = prompt(" enter choice  : ",null);
+
+    function calc(){
+    switch(ch){
+        case("+"): return a+b ;
+        case("-"): return a-b;
+        case("*"): return a*b;
+        case("/"): return Math.floor(a/b) ;
+        default: document.writeln(" entre approriate choice");
+    }
+}
+var res = calc();
+document.writeln("<br>"+a+" "+ch+" "+b+"  : "+res);
+    
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ let a = prompt(" entre a num ");
+ let b = prompt(" enter a num ");
+    function gcd(a,b){
+        if (b=0) {
+            return a;
+        }
+        else{
+            return gcd(b,a%b);
+        }
+
+    }
+
+    function reverse(a){
+    var res = 0 ,d  ,temp=a;
+    while(a>0){
+        d= a%10;
+        a=Math.floor(a/10);
+        res = (res*10)+d;
+    }
+    return res;
+}
+
+    function random_numbers(){
+        console.log(" random number is :  <br> ")
+        return Math.floor(Math.random()*400);
+    }
+
+    document.writeln(" gcd of "+ a+" and "+ b+" : "+gcd(a,b));
+    document.writeln("  revrse of "+a + " is : "+ reverse(a));
+    document.writeln( " random number b/w 1 to 399 "+random_numbers());
+
+</script>
+</html>
