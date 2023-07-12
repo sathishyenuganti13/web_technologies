@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv=""iv="content-type" content="text/html; charset=utf-8" />
+
+    <title> new page</title>
+    
+</head>
+<body>
+    <h1 style="color:goldenrod;font-size:500%" id="body">hello world!</h1>
+    <button onclick="bubble_sort()">&nbsp;sort?&nbsp;</button>
+</body>
+<script type="text/javascript" charset="utf-8">
+    function bubble_sort(){
+        let arr=[11,2,31,26,3,123,4,67]
+        for(let i=0;i<arr.length;i++)
+        {
+            for(let j=0;j<arr.length;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    let temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp
+                }
+            }
+        }
+        document.writeln(" after sorting : ",arr)
+    }
+</script>
+</html>
